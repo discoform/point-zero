@@ -15,8 +15,10 @@ post_content:
       fathers of computer animation.
 
 
-      See also: **John Whitney "Catalog" 1961**
-  - type: youtube_embed
-    youtubeID: TbV7loKp69s
-    caption: John Whitney "Catalog" 1961
+
+
+      **See also: [John Whitney "Catalog" 1961](https://point-zero.netlify.app/john-whitney-catalog-1961)**
+
+
+      **See Also: [Jordan Belson - Mandala](https://point-zero.netlify.app/jordan-belson-mandala)**
 ---
