@@ -44,6 +44,7 @@
             <!-- ------------- -->
             {%- endfor %}
         </section>
+        {% include post-footer.html %}
     </article>
     {% endfor %}
     {% else %}
@@ -99,16 +100,7 @@
             <!-- ------------- -->
             {%- endfor %}
         </section>
-        <footer class="post-footer">
-            {%- assign posts = site.posts | where_exp:"post", "post.url != page.url" | sample: 9999 %}
-            {%- for post in posts limit:1 %}
-            <a class="next" href="{{post.url}}">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path
-                        d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
-                </svg></a>
-            {% endfor %}
-        </footer>
+        {% include post-footer.html %}
     </article>
     {% endif %}
 </main>
