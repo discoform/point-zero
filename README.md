@@ -3,9 +3,9 @@
 
 # Point Zero
 
+![Point Zero Screenshot](https://repository-images.githubusercontent.com/387531492/abc8549a-791c-401c-8c1a-18b6ef42aa51)
+
 Point Zero is a truly minimal micro-blog theme for Jekyll.
-
-
 
 ## Point Zero eschews many of the typical blogger "must-haves" in pursuit of an uncluttered and esoteric reading experience.
 
@@ -19,6 +19,14 @@ This means:
 - no sidebars
 - no comments
 
+Additionally, the theme is meant to be :
+
+- Simple to use
+- Free to use
+- Semantic Markup
+- Minimal use of Javascript and CSS
+- High lighthouse scores
+- High Web Vitals scores
 
 ## So, what _does_ it have?
 
