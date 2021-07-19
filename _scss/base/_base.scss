@@ -1,0 +1,73 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: $text-color;
+
+
+
+  @include on-event {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  figcaption {
+    font-size: 0.9rem;
+    max-width: 100%;
+    padding: 0.5em 0 1em;
+    color: $dark-grey;
+  }
+  &.featured-media {
+    border-radius: $radius;
+    box-shadow: $box-shadow;
+    > img {
+      border-radius: $radius $radius 0 0;
+    }
+
+    figcaption {
+      border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+      padding: 0.75em 1em;
+    }
+    &:nth-child(2n) {
+      margin-top: $margin/2;
+    }
+  }
+}
+
+code {
+  font-family: $code-font-stack;
+  padding: 0.1rem 0.3rem 0.2rem;
+  border-radius: 0.2rem;
+  font-weight: 700;
+  .highlight & {
+    width: 100%;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,115 @@
+{% include header.html %}
+<main class="container">
+    {%- if page.url == '/' %}
+    {% for post in site.posts limit:1 %}
+    {%- assign latest_post = site.posts[0] -%}
+    <article>
+        {%- if latest_post.media -%}
+        {%- for item in latest_post.media %}
+        <figure class="featured-media">
+            {%- if item.type == 'featured_media_image' %}
+            <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
+            {% picture {{item.path}} --alt {{item.caption}} %}
+            {%- endif -%}
+            {%- if item.type == 'featured_media_youtube' -%}
+            <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
+            <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
+            {%- endif %}
+            <figcaption>{{item.caption}}</figcaption>
+        </figure>
+        {% endfor %}
+        {% endif %}
+        <section class="content">
+            <h2>{{latest_post.title}}</h2>
+            {%- for item in latest_post.post_content -%}
+            {% if item.type == 'post_content' -%}
+            {{item.content | markdownify }}
+            {%- endif -%}
+            <!--------------- -->
+            {% if item.type == 'youtube_embed' -%}
+            <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
+            <figure>
+                <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
+                <figcaption>{{item.caption}}</figcaption>
+            </figure>
+            {% endif %}
+            <!-- ------------- -->
+            {% if item.type == 'post_content_image' -%}
+            <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
+            <figure>
+                {% picture {{item.path}} --alt {{item.caption}} %}
+                <figcaption>{{item.caption}}</figcaption>
+            </figure>
+            {% endif %}
+            <!-- ------------- -->
+            {%- endfor %}
+        </section>
+    </article>
+    {% endfor %}
+    {% else %}
+    <article>
+        {%- if page.media -%}
+        {% for item in page.media -%}
+        <figure class="featured-media">
+            {% if item.type == 'featured_media_image' -%}
+            <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
+            {% picture {{item.path}} --alt {{item.caption}} %}
+            {% endif %}
+            {% if item.type == 'featured_media_youtube' -%}
+            <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
+            <script type="application/ld+json">
+                {
+                "@context": "http://schema.org",
+                "@type": "VideoObject",
+                "name": "{{page.title}}",
+                "description": "{{page.excerpt}}",
+                "thumbnailUrl": "https://i.ytimg.com/vi/{{item.youtubeID}}/hqdefault.jpg",
+                "uploadDate": "{{page.date}}",
+               "embedUrl": "https://www.youtube.com/embed/{{item.youtubeID}}"
+                }
+              </script>
+            <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
+            {% endif %}
+            <figcaption>{{item.caption}}</figcaption>
+        </figure>
+        {% endfor %}
+        {% endif %}
+        <section class="content">
+            <h2>{{page.title}}</h2>
+            {%- for item in page.post_content -%}
+            {% if item.type == 'post_content' -%}
+            {{item.content | markdownify }}
+            {%- endif -%}
+            <!--------------- -->
+            {% if item.type == 'youtube_embed' -%}
+            <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
+            <figure>
+                <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
+                <figcaption>{{item.caption}}</figcaption>
+            </figure>
+            {% endif %}
+            <!-- ------------- -->
+            {% if item.type == 'post_content_image' -%}
+            <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
+            <figure>
+                {% picture {{item.path}} --alt {{item.caption}} %}
+                <figcaption>{{item.caption}}</figcaption>
+            </figure>
+            {% endif %}
+            <!-- ------------- -->
+            {%- endfor %}
+        </section>
+        <footer class="post-footer">
+            {%- assign posts = site.posts | where_exp:"post", "post.url != page.url" | sample: 9999 %}
+            {%- for post in posts limit:1 %}
+            <a class="next" href="{{post.url}}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
+                </svg></a>
+            {% endfor %}
+        </footer>
+    </article>
+    {% endif %}
+</main>
+{% include footer.html %}

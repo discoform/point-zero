@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href={{"/css/style.css" | baseurl}}>
+	{% seo -%}
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body class="{{page.layout}}">
+	<header class="site-header container">
+		{%- if site.data.siteInfo.display == true %}
+		<h1 id="modalBtn" class="site-title">{{site.title}}</h1>
+		<!-- Trigger/Open The Modal -->
+		<!-- The Modal -->
+		<div id="infoModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				{{site.data.siteInfo.about | markdownify}}
+			</div>
+		</div>
+		{% else %}
+		<h1 class="site-title">{{site.title}}</h1>
+		{% endif %}
+	</header>
