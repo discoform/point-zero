@@ -63,7 +63,7 @@ about: >-
 
   **description:**
 
-  (A description of the site. [Use best paractices](https://moz.com/learn/seo/meta-description))
+  (A description of the site. [Use best practices](https://moz.com/learn/seo/meta-description))
 
 
   **baseurl:**
@@ -111,7 +111,7 @@ about: >-
   With the configuration already set-up, you'll just need to [follow these steps to enable authentication on Netlify](https://www.netlifycms.org/docs/add-to-your-site/#authentication).
 
 
-  Once the CMS is set up, you can access it via  `{yoursite.com}/admin`
+  Once the CMS is authenticated, you can access it via  `{yoursite.com}/admin`
 
 
   You can add content to the `about` modal via the Site Settings -> Site Info field.
