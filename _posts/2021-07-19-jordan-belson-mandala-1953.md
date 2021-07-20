@@ -15,4 +15,8 @@ post_content:
 
 
       Title list, film notes and details are at [centerforvisualmusic.org/visualmusicdvd](centerforvisualmusic.org/visualmusicdvd)
+recommended_posts:
+  title:
+    - John Whitney Catalog, 1961
+    - John Whitney, Permutations 1969, Generative graphics
 ---
