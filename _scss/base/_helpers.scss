@@ -65,9 +65,15 @@
 }
 
 .post-footer {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   margin-top: $margin;
   margin-bottom: $margin;
-  text-align: right;
+  ul.recommended-content a {
+    margin-left: 0;
+    color: $brand-color;
+  }
+  a.next {
+    margin: auto 0 auto auto;
+  }
 }
-
