@@ -31,6 +31,7 @@ Additionally, the theme is meant to be :
 ## So, what _does_ it have?
 
 - Point Zero will display your latest post on the homepage. The only navigation element from there, and throughout the site, is a single arrow icon that will randomly advance you to another post.
+- Sub navigation can be provided by adding recommended content (posts) via dropdown menu in the post editor.
 - Clicking the site title will not bring you back to the home page, but will display your `About` information.
 - The layout is clean, simple, and responsive.
 
