@@ -23,4 +23,7 @@ post_content:
       * [Second Link](https://point-zero.netlify.app)
 
       * [Photo by Bruno Thethe](https://www.pexels.com/@bruthethe)
+recommended_posts:
+  title:
+    - Another Sample Post
 ---
