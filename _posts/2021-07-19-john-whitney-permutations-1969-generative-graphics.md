@@ -20,4 +20,8 @@ post_content:
 
 
       **See Also: [Jordan Belson - Mandala](https://point-zero.netlify.app/jordan-belson-mandala)**
+recommended_posts:
+  title:
+    - John Whitney Catalog, 1961
+    - Jordan Belson - Mandala (1953)
 ---
