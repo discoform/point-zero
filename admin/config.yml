@@ -19,12 +19,11 @@ collections:
     label: 'Post'
     folder: '_posts/'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}-{{title}}'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Permalink', name: 'permalink', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - label: "Featured Media"
@@ -71,3 +70,15 @@ collections:
             fields:
               - { label: YouTube ID, name: youtubeID, widget: string }
               - { label: Alt text and Caption, name: caption, widget: string }
+      - label: "Add Recommended Post"
+        name: "recommended_posts"
+        widget: "object"
+        fields:
+        - label: "Post"
+          name: "title"
+          widget: "relation"
+          collection: "post"
+          search_fields: ["title"]
+          value_field: "{{title | slugify}}"
+          display_fields: ["title"]
+          multiple: true
