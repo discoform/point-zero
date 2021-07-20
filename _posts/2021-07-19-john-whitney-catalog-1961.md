@@ -14,4 +14,8 @@ post_content:
 
 
       Also Whitney and the techniques he developed with this machine were what inspired Douglas Trumbull (special fx wizard) to use the slit scan technique on 2001: A Space Odyssey
+recommended_posts:
+  title:
+    - John Whitney, Permutations 1969, Generative graphics
+    - Jordan Belson - Mandala (1953)
 ---
