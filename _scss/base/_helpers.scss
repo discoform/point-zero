@@ -69,10 +69,17 @@
   justify-content: space-between;
   margin-top: $margin;
   margin-bottom: $margin;
-  ul.recommended-content a {
+  ul.recommended-content li{
+    padding:0 10px;
+    margin: 10px 0;
+
+
+  a {
     margin-left: 0;
     color: $brand-color;
+    padding: 10px;
   }
+}
   a.next {
     margin: auto 0 auto auto;
   }
