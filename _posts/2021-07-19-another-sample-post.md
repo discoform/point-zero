@@ -2,6 +2,9 @@
 layout: post
 title: Another Sample Post
 date: 2021-07-19T18:08:12.940Z
+# Limit 90 characters for SEO optimization
+excerpt: This is an example post for the Point Zero Jekyll theme. Photo by Dids
+  from Pexels.
 media:
   - type: featured_media_image
     path: /assets/images/pexels-dids-3705001.jpg
