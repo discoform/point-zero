@@ -44,32 +44,24 @@ This repository is a template.
 
 2. Give your repository a name and an optional description. (It's not necessary to include all branches.)
 
-3. In your newly created repository, open the `_config.yml` file
+3. In your newly created repository, open the `_config.yml` file in the root directory (_not_ the one in the `admin` directory)
 
 4. Edit the file to fill out the following fields:
 
-```
-- title:
-(The site title. This will display in the header and title meta tags)
 
-- email:
-(Your email address, or address to the admin of the site)
+- `title:` This will display in the header and title meta tags.
 
-- description:
-(A description of the site. [Use best paractices](https://moz.com/learn/seo/meta-description))
+- `email:` Your email address, or address to the admin of the site.
 
--  baseurl:
-(this is often left blank unless you are using a subdirectory of another site for the installation)
+- `description:` A description of the site. [Use best paractices](https://moz.com/learn/seo/meta-description).
 
-- url:
-(the base hostname & protocol for - your site, e.g. http://example.com)
+- `baseurl:` this is often left blank unless you are using a subdirectory of another site for the installation.
 
-- author:
-(the site author name. this can be you or the name of the site)
+- `url:` the base hostname & protocol for - your site, e.g. http://example.com.
 
-- logo:
-(the site logo. this won't currently display on the site, but is needed for structured data)
-```
+- `author:` the site author name. this can be you or the name of the site.
+
+- `logo:` the site logo. this won't currently display on the site, but is needed for structured data.
 
 
 5. From here you'll want to [follow these instructions](https://www.netlify.com/blog/2020/04/02/a-step-by-step-guide-jekyll-4.0-on-netlify/#connecting-to-netlify) to launch the site on Netlify's free-tier:
@@ -79,17 +71,19 @@ This repository is a template.
 ## [Netlify CMS](https://www.netlifycms.org) is built-in with the following configuration fields:
 
 
-- layout: (hidden field, autofilled with the `post` layout type)
+- `layout:` provides no options and is hidden in the post editor.
 
-- title: sets the title of the post
+- `title:` provides the post title and a sanitized slug/permalink based on the title content. ❗❗❗ Use a descriptive title and then do not change it unless you also want the permalink to change ❗❗❗
 
-- permalink: sets the permalink (slug) for the post
+- `date:` automatically generated upon creation of post, but can be updated in the CMS.
 
-- date: this is auto filled with the post creation date, but can be updated in the CMS
+- `image:` required for Jekyll SEO plugin and structured data.
 
-- featured media (optional): the CMS is set to include multiple media types. Right now the options are image and YouTube Embed. This has nested items for image path and caption/alt text
+- `excerpt:` required for Jekyll SEO plugin and structured data.
 
-- post content (optional): A simple pagebuilder tool adds WYSIWYG, Image, or YouTube embed content to the post. You can have multiples of each content type, and you can re-order the content at will.
+- `media (optional):` media adds one or more full-width image or YouTube embed types to the top of the post. Recommended 1 per post.
+
+- `post content (optional):` features a mini pagebuilder to add blocks of written content, images, and YouTube embeds to the post. Recommended at least one instance of WYSIWYG block.
 
 ## Authenticate on Netlify
 
@@ -119,7 +113,7 @@ Jekyll plugin to silently generate a sitemaps.org compliant sitemap for your Jek
 
 
 ### [Jekyll Autoprefixer](https://github.com/vwochnik/jekyll-autoprefixer)
-This plugin provides simple autoprefixer support for Jekyll. To ensure compatibility with the latest version of JekyllI've clamped the `execjs` gem to version 2.7.0, [per this issue](https://github.com/ai/autoprefixer-rails/issues/160)
+This plugin provides simple autoprefixer support for Jekyll. To ensure compatibility with the latest version of Jekyll I've clamped the `execjs` gem to version 2.7.0, [per this issue](https://github.com/ai/autoprefixer-rails/issues/160)
 
 ### [Jekyll Picture Tag](https://github.com/rbuchberger/jekyll_picture_tag)
 
