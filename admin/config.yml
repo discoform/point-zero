@@ -26,6 +26,13 @@ collections:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - {
+        label: "Short Excerpt",
+        name: "excerpt",
+        widget: "text",
+        pattern: ["^.{50,90}$", "Must be between 50–90 characters"],
+        comment: "Limit 90 characters for SEO optimization",
+      }
       - label: "Featured Media"
         name: "media"
         widget: "list"

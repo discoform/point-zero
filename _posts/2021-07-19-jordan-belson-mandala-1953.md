@@ -2,6 +2,9 @@
 layout: post
 title: Jordan Belson - Mandala (1953)
 date: 2021-07-19T19:07:22.924Z
+# Limit 90 characters for SEO optimization
+excerpt: Watch Jordan Belson's Mandala (1953), one of 13 films from the Center
+  for Visual Music.
 media:
   - type: featured_media_youtube
     youtubeID: dH60wa2TuSk

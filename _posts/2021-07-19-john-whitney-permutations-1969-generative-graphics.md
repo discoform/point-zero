@@ -1,7 +1,9 @@
 ---
 layout: post
-title: John Whitney, Permutations 1969, Generative graphics
+title: John Whitney, Permutations 1966, Generative graphics
 date: 2021-07-19T19:15:15.626Z
+# Limit 90 characters for SEO optimization
+excerpt: Watch John Whitney's celebrated experimental film from 1969, Permutations.
 media:
   - type: featured_media_youtube
     youtubeID: 50CV6_tDJ9M
