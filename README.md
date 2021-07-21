@@ -12,7 +12,7 @@ Point Zero is a truly minimal micro-blog theme for Jekyll.
 This means:
 
 - no social sharing or following options
-- no logo
+- ~~no logo~~ logo option is now added to `config.yml` for structured data
 - no footer
 - no sitewide navigation
 - no link to homepage
@@ -66,6 +66,9 @@ This repository is a template.
 
 - author:
 (the site author name. this can be you or the name of the site)
+
+- logo:
+(the site logo. this won't currently display on the site, but is needed for structured data)
 ```
 
 

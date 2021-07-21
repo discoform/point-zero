@@ -24,6 +24,7 @@ description: Point Zero is a micro-blog theme template for Jekyll
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://point-zero.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
 author: Point Zero
+logo: logo.jpg
 
 # Build settings
 ###############################################################
