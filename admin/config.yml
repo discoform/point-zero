@@ -4,13 +4,13 @@ backend:
 media_folder: 'assets/images'
 local_backend: true
 collections:
-  - name: "config"
-    label: "Site Settings"
+  - name: 'config'
+    label: 'Site Settings'
     editor:
       preview: false
     files:
-      - label: "Site Info"
-        name: "siteInfo"
+      - label: 'Site Info'
+        name: 'siteInfo'
         file: _data/siteInfo.yml
         fields:
         - { label: About the site, name: about, widget: markdown }
@@ -26,16 +26,11 @@ collections:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - {
-        label: "Short Excerpt",
-        name: "excerpt",
-        widget: "text",
-        pattern: ["^.{50,90}$", "Must be between 50–90 characters"],
-        comment: "Limit 90 characters for SEO optimization",
-      }
-      - label: "Featured Media"
-        name: "media"
-        widget: "list"
+      - { label: 'Structured Data Image',   name: 'image', widget: 'image', comment: 'Required for SEO' }
+      - { label: 'Short Excerpt', name: 'excerpt', widget: 'text', pattern: ['^.{50,90}$', 'Must be between 50–90 characters'], comment: 'Limit 90 characters for SEO optimization' }
+      - label: 'Featured Media'
+        name: 'media'
+        widget: 'list'
         types:
         - label: 'Image'
           name: 'featured_media_image'
@@ -43,9 +38,9 @@ collections:
           fields:
             - { label: Image, name: path, widget: image }
             - { label: Caption, name: caption, widget: string}
-        - label: "YouTube Embed"
-          name: "featured_media_youtube"
-          widget: "object"
+        - label: 'YouTube Embed'
+          name: 'featured_media_youtube'
+          widget: 'object'
           required: false
           fields:
             - { label: YouTube ID, name: youtubeID, widget: string }
@@ -56,36 +51,39 @@ collections:
         minimize_collapsed: true
         add_to_top: false
         types:
-          - label: "WYSIWYG"
-            name: "post_content"
-            widget: "object"
-            summary: "{{fields.content}}"
+          - label: 'WYSIWYG'
+            name: 'post_content'
+            widget: 'object'
+            summary: '{{fields.content}}'
             required: false
             fields:
-            - {label: "Post Content", name: "content", widget: "markdown", editorComponents: image, buttons: [ bold, italic, code, link, heading-three, quote, bulleted-list, numbered-list ] }
-          - label: "Image"
-            name: "post_content_image"
-            widget: "object"
+            - {label: 'Post Content', name: 'content', widget: 'markdown', editorComponents: image, buttons: [ bold, italic, code, link, heading-three, quote, bulleted-list, numbered-list ] }
+          - label: 'Image'
+            name: 'post_content_image'
+            widget: 'object'
             required: false
             fields:
               - { label: Image, name: path, widget: image }
               - { label: Alt text and Caption, name: caption, widget: string }
-          - label: "YouTube Embed"
-            name: "youtube_embed"
-            widget: "object"
+          - label: 'YouTube Embed'
+            name: 'youtube_embed'
+            widget: 'object'
             required: false
             fields:
               - { label: YouTube ID, name: youtubeID, widget: string }
               - { label: Alt text and Caption, name: caption, widget: string }
-      - label: "Add Recommended Post"
-        name: "recommended_posts"
-        widget: "object"
+
+      - label: 'Add Recommended Post'
+        name: 'recommended_posts'
+        widget: 'object'
+        required: false
         fields:
-        - label: "Post"
-          name: "title"
-          widget: "relation"
-          collection: "post"
-          search_fields: ["title"]
-          value_field: "{{title | slugify}}"
-          display_fields: ["title"]
+        - label: 'Post'
+          name: 'title'
+          widget: 'relation'
+          collection: 'post'
+          search_fields: ['title']
+          value_field: '{{title | slugify}}'
+          display_fields: ['title']
           multiple: true
+          required: false

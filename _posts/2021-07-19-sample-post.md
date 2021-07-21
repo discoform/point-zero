@@ -2,6 +2,8 @@
 layout: post
 title: Sample Post
 date: 2021-07-19T18:04:02.128Z
+# Required for SEO
+image: /assets/images/pexels-bruno-thethe-1910225.jpg
 # Limit 90 characters for SEO optimization
 excerpt: This is an example post for the Point Zero Jekyll theme. Photo by Dids
   from Pexels.
