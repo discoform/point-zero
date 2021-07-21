@@ -2,6 +2,8 @@
 layout: post
 title: John Whitney Catalog, 1961
 date: 2021-07-19T19:18:47.294Z
+# Required for SEO
+image: /assets/images/john-whitney-catalog.jpg
 # Limit 90 characters for SEO optimization
 excerpt: Watch John Whitney's demo reel, created with an analog computer built
   from WWII hardware.

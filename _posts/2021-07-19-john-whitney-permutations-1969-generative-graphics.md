@@ -2,6 +2,8 @@
 layout: post
 title: John Whitney, Permutations 1966, Generative graphics
 date: 2021-07-19T19:15:15.626Z
+# Required for SEO
+image: /assets/images/john-whitney-permutations.jpg
 # Limit 90 characters for SEO optimization
 excerpt: Watch John Whitney's celebrated experimental film from 1969, Permutations.
 media:
