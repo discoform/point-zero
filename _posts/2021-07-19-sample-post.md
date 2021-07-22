@@ -33,12 +33,6 @@ post_content:
       * [Second Link](https://point-zero.netlify.app)
 
       * [Photo by Bruno Thethe](https://www.pexels.com/@bruthethe)
-  - type: figure
-    path: /assets/images/embryo_2.jpg
-    caption: hgfft
-  - type: youtube
-    youtubeID: Mo8cE75hGbU
-    caption: hhhh
 # Optional recommended posts are determined by the post author and added here. This is good for SEO and internal linking.
 recommended_posts:
   title:
