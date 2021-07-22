@@ -34,42 +34,6 @@ main {
   display: block;
 }
 
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-  font-size: 32px;
-  line-height: 36px;
-  margin: 0 0 1rem 0;
-}
-
-h2 {
-  font-size: 20px;
-  line-height: 31px;
-  margin: 1rem 0;
-}
-
-h3,
-h4,
-h5,
-h6 {
-  font-size: 18px;
-  line-height: 31px;
-  margin: 1rem 0;
-}
-
-p,
-ul,
-ol,
-table,
-dl,
-dd {
-  font-size: 14px;
-  line-height: 20px;
-  margin: 1rem 0;
-}
 
 /**
  * @desc Simple and Nice Blockquote Styling
@@ -102,15 +66,6 @@ hr {
   overflow: visible; /* 2 */
 }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
 
 /* Text-level semantics
    ========================================================================== */

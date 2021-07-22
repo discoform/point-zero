@@ -5,3 +5,44 @@ body {
   color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
 }
+
+h1 {
+  font: bold 1.75rem / 1.4 $text-font-stack;
+}
+
+h2 {
+  font: bold 1.35rem / 1.4 $text-font-stack;
+}
+h3,
+h4,
+h5 {
+  font: bold 1.15rem / 1.4 $text-font-stack;
+}
+h6 {
+  font: bold 1rem / 1.4 $text-font-stack;
+}
+
+p,
+ul,
+ol,
+table,
+dl,
+dd,
+figcaption {
+  color: $text-color;
+  font: normal 1rem / 1.4 $text-font-stack;
+}
+
+code {
+  display: inline-block;
+  font-family: $code-font-stack;
+  font-weight: bolder;
+  pre & {
+    display: block;
+    font-weight: normal;
+    background-color: $light-grey;
+    border: 1px solid $mid-grey;
+    padding: 10px 20px;
+    border-radius: $radius;
+  }
+}
