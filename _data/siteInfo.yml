@@ -1,12 +1,6 @@
 about: >
-  ![Netlify
-  Status](https://api.netlify.com/api/v1/badges/e060364c-6d9c-4c76-beba-b7d6c91f8fb7/deploy-status)](https://app.netlify.com/sites/point-zero/deploys)
-
-
+  
   # Point Zero
-
-
-  ![Point Zero Screenshot](https://repository-images.githubusercontent.com/387531492/abc8549a-791c-401c-8c1a-18b6ef42aa51)
 
 
   Point Zero is a truly minimal micro-blog theme for Jekyll.
