@@ -34,31 +34,12 @@ a {
 }
 
 figure {
-  display: flex;
-  flex-direction: column;
-
   figcaption {
     max-width: 100%;
-    padding: 0.5em 0 0;
+    padding: 0.75em 0;
   }
-  &.featured-media {
-    border-radius: $radius;
-    box-shadow: $box-shadow;
 
-    > img {
-      border-radius: $radius $radius 0 0;
-      margin: auto;
-    }
-    lite-youtube {
-      border-radius: $radius $radius 0 0;
-    }
-
-    figcaption {
-      border-top: 1px solid $light-grey !important;
-      padding: 0.75em 1em;
-    }
-    &:nth-child(2n) {
-      margin-top: $margin/2;
-    }
+  &:nth-child(2n) {
+    margin-top: $margin/2;
   }
 }
