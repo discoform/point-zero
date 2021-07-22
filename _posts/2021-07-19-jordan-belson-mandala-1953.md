@@ -10,7 +10,7 @@ image: /assets/images/jordan-belson-mandala.jpg
 # Excerpt is required with a limit of 140 characters for SEO optimization
 excerpt: Watch Jordan Belson's Mandala (1953), one of 13 films from the Center
   for Visual Music.
-# Optional featured media adds one or more full-width image or YouTube embeds to the top of the post. Recommended 1 per post.
+# Optional featured media adds one or more full-width image or YouTube embeds to the top of the post.
 media:
   - type: featured_media_youtube
     youtubeID: dH60wa2TuSk

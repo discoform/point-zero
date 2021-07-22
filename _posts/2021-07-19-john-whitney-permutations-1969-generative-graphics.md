@@ -9,7 +9,7 @@ date: 2021-07-19T19:15:15.626Z
 image: /assets/images/john-whitney-permutations.jpg
 # Excerpt is required with a limit of 140 characters for SEO optimization
 excerpt: Watch John Whitney's celebrated experimental film from 1969, Permutations.
-# Optional featured media adds one or more full-width image or YouTube embeds to the top of the post. Recommended 1 per post.
+# Optional featured media adds one or more full-width image or YouTube embeds to the top of the post.
 media:
   - type: featured_media_youtube
     youtubeID: 50CV6_tDJ9M
