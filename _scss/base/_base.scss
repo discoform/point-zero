@@ -27,8 +27,6 @@ html {
 a {
   color: $text-color;
 
-
-
   @include on-event {
     color: $text-color;
     text-decoration: underline;
@@ -38,8 +36,8 @@ a {
 figure {
   display: flex;
   flex-direction: column;
+
   figcaption {
-    font-size: 0.9rem;
     max-width: 100%;
     padding: 0.5em 0 1em;
     color: $dark-grey;
@@ -47,27 +45,21 @@ figure {
   &.featured-media {
     border-radius: $radius;
     box-shadow: $box-shadow;
+
     > img {
+      border-radius: $radius $radius 0 0;
+      margin: auto;
+    }
+    lite-youtube {
       border-radius: $radius $radius 0 0;
     }
 
     figcaption {
-      border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+      border-top: 1px solid $light-grey !important;
       padding: 0.75em 1em;
     }
     &:nth-child(2n) {
       margin-top: $margin/2;
     }
-  }
-}
-
-code {
-  font-family: $code-font-stack;
-  padding: 0.1rem 0.3rem 0.2rem;
-  border-radius: 0.2rem;
-  font-weight: 700;
-  .highlight & {
-    width: 100%;
-    padding: 20px;
   }
 }

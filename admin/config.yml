@@ -58,10 +58,10 @@ collections:
           - label: 'WYSIWYG'
             name: 'post_content'
             widget: 'object'
-            summary: '{{fields.content}}'
+            summary: '{{fields.label}}'
             required: false
             fields:
-            - {label: 'Post Content', name: 'content', widget: 'markdown', editorComponents: image, buttons: [ bold, italic, code, link, heading-three, quote, bulleted-list, numbered-list ] }
+            - {label: 'Post Content', name: 'content', widget: 'markdown',  buttons: [ bold, italic, code, link, heading-three, quote, bulleted-list, numbered-list ] }
           - label: 'Image'
             name: 'post_content_image'
             widget: 'object'
