@@ -29,13 +29,12 @@ post_content:
 
 
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  - type: figure
+    path: /assets/images/pexels-dids-3705862.jpg
+    caption: Photo by Dids from Pexels
   - type: image
     path: /assets/images/pexels-dids-3705862.jpg
     caption: Photo by Dids from Pexels
-  - type: content
-    content: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 # Optional recommended posts are determined by the post author and added here. This is good for SEO and internal linking.
 recommended_posts:
   title:
