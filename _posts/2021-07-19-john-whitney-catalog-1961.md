@@ -10,7 +10,7 @@ image: /assets/images/john-whitney-catalog.jpg
 # Excerpt is required with a limit of 140 characters for SEO optimization
 excerpt: Watch John Whitney's demo reel, created with an analog computer built
   from WWII hardware.
-# Optional featured media adds one or more full-width image or YouTube embeds to the top of the post. Recommended 1 per post.
+# Optional featured media adds one or more full-width image or YouTube embeds to the top of the post.
 media:
   - type: featured_media_youtube
     youtubeID: TbV7loKp69s

@@ -10,7 +10,7 @@ image: /assets/images/pexels-bruno-thethe-1910225.jpg
 # Excerpt is required with a limit of 140 characters for SEO optimization
 excerpt: This is an example post for the Point Zero Jekyll theme. Photo by Dids
   from Pexels.
-# Optional featured media adds one or more full-width image or YouTube embeds to the top of the post. Recommended 1 per post.
+# Optional featured media adds one or more full-width image or YouTube embeds to the top of the post.
 media:
   - type: featured_media_image
     path: /assets/images/pexels-bruno-thethe-1910225.jpg

@@ -24,14 +24,15 @@ collections:
       preview: false
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post', comment: 'Layout field provides no options and is hidden in the post editor' }
-      - { label: 'Title', name: 'title', widget: 'string', comment: 'Title field provides the post title and a sanitized slug/permalink based on the title content. !!! Use a descriptive title and then do not change it !!!' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' , comment: 'Published date is automatically generated upon creation of post.' }
-      - { label: 'Structured Data Image',   name: 'image', widget: 'image', comment: 'Image field is required for SEO' }
-      - { label: 'Short Excerpt', name: 'excerpt', widget: 'text', pattern: ['^.{50,140}$', 'Must be between 50–140 characters'], comment: 'Excerpt is required with a limit of 140 characters for SEO optimization' }
+      - { label: 'Title', name: 'title', widget: 'string', comment: 'Title field provides the post title and a sanitized slug/permalink based on the title content. !!! Use a descriptive title and then do not change it !!!', hint: 'Title field provides the post title and a sanitized slug/permalink based on the title content. Use a descriptive title and then do not change it' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' , comment: 'Published date is automatically generated upon creation of post.', hint: 'Published date is automatically generated upon creation of post, but can be changed if needed.' }
+      - { label: 'Structured Data Image',   name: 'image', widget: 'image', comment: 'Image field is required for SEO', hint: 'This image will not display on the post, but an image is required here for SEO' }
+      - { label: 'Short Excerpt', name: 'excerpt', widget: 'text', pattern: ['^.{50,140}$', 'Must be between 50–140 characters'], comment: 'Excerpt is required with a limit of 140 characters for SEO optimization', hint: 'Excerpt is required with a limit of 140 characters for SEO optimization' }
       - label: 'Featured Media'
         name: 'media'
         widget: 'list'
-        comment: 'Optional featured media adds one or more full-width image or YouTube embeds to the top of the post. Recommended 1 per post.'
+        comment: 'Optional featured media adds one or more full-width image or YouTube embeds to the top of the post.'
+        hint: 'Select one or more image or YouTube embed to display at the top of the post.'
         types:
         - label: 'Image'
           name: 'featured_media_image'
@@ -50,6 +51,7 @@ collections:
         name: post_content
         widget: list
         comment: 'Optional post content features a mini pagebuilder to add blocks of written content, images, and YouTube embeds to the post. Recommended at least one instance of WYSIWYG block.'
+        hint: 'Post content features a mini pagebuilder to add blocks of written content, images, and YouTube embeds to the post. Recommended at least one instance of WYSIWYG block. Re-order the elements as needed.'
         minimize_collapsed: true
         add_to_top: false
         types:
@@ -74,10 +76,11 @@ collections:
             fields:
               - { label: YouTube ID, name: youtubeID, widget: string }
               - { label: Alt text and Caption, name: caption, widget: string }
-      - label: 'Add Post'
+      - label: 'Add Recommended Post?'
         name: 'recommended_posts'
         widget: 'object'
         comment: 'Optional recommended posts are determined by the post author and added here. This is good for SEO and internal linking.'
+        hint: 'Recommended posts are optional, but they are good for SEO and internal linking.'
         required: false
         fields:
         - label: 'Posts'
