@@ -4,22 +4,24 @@
     {% for post in site.posts limit:1 %}
     {%- assign latest_post = site.posts[0] -%}
     <article>
-        {%- if latest_post.media -%}
-        {%- for item in latest_post.media %}
-        <figure class="featured-media">
-            {%- if item.type == 'featured_media_image' %}
-            <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
-            {% picture {{item.path}} --alt {{item.caption}} %}
-            {%- endif -%}
-            {%- if item.type == 'featured_media_youtube' -%}
-            <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
-            <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
-            {%- endif %}
-            <figcaption>{{item.caption}}</figcaption>
-        </figure>
-        {% endfor %}
-        {% endif %}
-        <h2>{{latest_post.title}}</h2>
+        <header class="article-header">
+            {%- if latest_post.media -%}
+            {%- for item in latest_post.media %}
+            <figure class="featured-media">
+                {%- if item.type == 'featured_media_image' %}
+                <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
+                {% picture {{item.path}} --alt {{item.caption}} %}
+                {%- endif -%}
+                {%- if item.type == 'featured_media_youtube' -%}
+                <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
+                <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
+                {%- endif %}
+                <figcaption>{{item.caption}}</figcaption>
+            </figure>
+            {% endfor %}
+            {% endif %}
+            <h2>{{latest_post.title}}</h2>
+        </header>
         {%- for item in latest_post.post_content -%}
         <section class="content {{item.type}}-block">
             {% if item.type == 'content' -%}
@@ -46,16 +48,17 @@
     {% endfor %}
     {% else %}
     <article>
-        {%- if page.media -%}
-        {% for item in page.media -%}
-        <figure class="featured-media">
-            {% if item.type == 'featured_media_image' -%}
-            <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
-            {% picture {{item.path}} --alt {{item.caption}} %}
-            {% endif %}
-            {% if item.type == 'featured_media_youtube' -%}
-            <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
-            <script type="application/ld+json">
+        <header class="article-header">
+            {%- if page.media -%}
+            {% for item in page.media -%}
+            <figure class="featured-media">
+                {% if item.type == 'featured_media_image' -%}
+                <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
+                {% picture {{item.path}} --alt {{item.caption}} %}
+                {% endif %}
+                {% if item.type == 'featured_media_youtube' -%}
+                <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
+                <script type="application/ld+json">
                 {
                 "@context": "http://schema.org",
                 "@type": "VideoObject",
@@ -66,13 +69,14 @@
                "embedUrl": "https://www.youtube.com/embed/{{item.youtubeID}}"
                 }
               </script>
-            <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
+                <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
+                {% endif %}
+                <figcaption>{{item.caption}}</figcaption>
+            </figure>
+            {% endfor %}
             {% endif %}
-            <figcaption>{{item.caption}}</figcaption>
-        </figure>
-        {% endfor %}
-        {% endif %}
-        <h2>{{page.title}}</h2>
+            <h2>{{page.title}}</h2>
+        </header>
         {%- for item in page.post_content -%}
         <section class="content {{item.type}}-block">
             {% if item.type == 'content' -%}
