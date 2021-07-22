@@ -17,7 +17,7 @@ media:
     caption: Jordan Belson - Mandala (1953)
 # Optional post content features a mini pagebuilder to add blocks of written content, images, and YouTube embeds to the post. Recommended at least one instance of WYSIWYG block.
 post_content:
-  - type: post_content
+  - type: content
     content: >-
       Trailer for Mandala (1953) , from the new Center for Visual Music DVD,
       which contains 13 rare experimental animation films. It also features

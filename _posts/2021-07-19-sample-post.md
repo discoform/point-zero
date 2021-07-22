@@ -1,13 +1,13 @@
 ---
-# Layout field provides no options and is hidden in the post editor
+# Layout field provides no options and is hidden in the post editor.
 layout: post
 # Title field provides the post title and a sanitized slug/permalink based on the title content. !!! Use a descriptive title and then do not change it !!!
 title: Sample Post
 # Published date is automatically generated upon creation of post.
 date: 2021-07-19T18:04:02.128Z
-# Image field is required for SEO
+# Image field is required for SEO.
 image: /assets/images/pexels-bruno-thethe-1910225.jpg
-# Excerpt is required with a limit of 140 characters for SEO optimization
+# Excerpt is required for SEO. Limit of 140 characters.
 excerpt: This is an example post for the Point Zero Jekyll theme. Photo by Dids
   from Pexels.
 # Optional featured media adds one or more full-width image or YouTube embeds to the top of the post.
@@ -17,7 +17,7 @@ media:
     caption: Photo by Bruno Thethe from Pexels
 # Optional post content features a mini pagebuilder to add blocks of written content, images, and YouTube embeds to the post. Recommended at least one instance of WYSIWYG block.
 post_content:
-  - type: post_content
+  - type: content
     content: >-
       ### The Post Content
 
@@ -33,6 +33,12 @@ post_content:
       * [Second Link](https://point-zero.netlify.app)
 
       * [Photo by Bruno Thethe](https://www.pexels.com/@bruthethe)
+  - type: figure
+    path: /assets/images/embryo_2.jpg
+    caption: hgfft
+  - type: youtube
+    youtubeID: Mo8cE75hGbU
+    caption: hhhh
 # Optional recommended posts are determined by the post author and added here. This is good for SEO and internal linking.
 recommended_posts:
   title:

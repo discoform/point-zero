@@ -16,7 +16,7 @@ media:
     caption: John Whitney – Permutations 1969
 # Optional post content features a mini pagebuilder to add blocks of written content, images, and YouTube embeds to the post. Recommended at least one instance of WYSIWYG block.
 post_content:
-  - type: post_content
+  - type: content
     content: John Whitney, Sr. (April 8, 1917 – September 22, 1995) was an American
       animator, composer and inventor, widely considered to be one of the
       fathers of computer animation.

@@ -17,7 +17,7 @@ media:
     caption: Photo by Dids from Pexels
 # Optional post content features a mini pagebuilder to add blocks of written content, images, and YouTube embeds to the post. Recommended at least one instance of WYSIWYG block.
 post_content:
-  - type: post_content
+  - type: content
     content: >-
       ### The Post Content
 
@@ -29,10 +29,10 @@ post_content:
 
 
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  - type: post_content_image
+  - type: mage
     path: /assets/images/pexels-dids-3705862.jpg
     caption: Photo by Dids from Pexels
-  - type: post_content
+  - type: content
     content: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
       dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
