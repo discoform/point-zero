@@ -23,11 +23,11 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post', comment: 'Layout field provides no options and is hidden in the post editor' }
-      - { label: 'Title', name: 'title', widget: 'string', comment: 'Title field provides the post title and a sanitized slug/permalink based on the title content. !!! Use a descriptive title and then do not change it !!!', hint: 'Title field provides the post title and a sanitized slug/permalink based on the title content. Use a descriptive title and then do not change it' }
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post', comment: 'Layout field provides no options and is hidden in the post editor.' }
+      - { label: 'Title', name: 'title', widget: 'string', comment: 'Title field provides the post title and a sanitized slug/permalink based on the title content. !!! Use a descriptive title and then do not change it !!!', hint: 'Title field provides the post title and a sanitized slug/permalink based on the title content. Use a descriptive title and then do not change it.' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' , comment: 'Published date is automatically generated upon creation of post.', hint: 'Published date is automatically generated upon creation of post, but can be changed if needed.' }
-      - { label: 'Structured Data Image',   name: 'image', widget: 'image', comment: 'Image field is required for SEO', hint: 'This image will not display on the post, but an image is required here for SEO' }
-      - { label: 'Short Excerpt', name: 'excerpt', widget: 'text', pattern: ['^.{50,140}$', 'Must be between 50–140 characters'], comment: 'Excerpt is required with a limit of 140 characters for SEO optimization', hint: 'Excerpt is required with a limit of 140 characters for SEO optimization' }
+      - { label: 'Structured Data Image', name: 'image', widget: 'image', comment: 'Image field is required for SEO.', hint: 'This image will not display on the post, but an image is required here for Structured Data.' }
+      - { label: 'Short Excerpt', name: 'excerpt', widget: 'text', pattern: ['^.{50,140}$', 'Must be between 50–140 characters.'], comment: 'Excerpt is required for SEO. Limit of 140 characters.', hint: 'Excerpt is required for SEO. Limit of 140 characters.' }
       - label: 'Featured Media'
         name: 'media'
         widget: 'list'
