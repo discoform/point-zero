@@ -27,10 +27,15 @@ ul,
 ol,
 table,
 dl,
-dd,
-figcaption {
+dd
+ {
   color: $text-color;
   font: normal 1rem / 1.4 $text-font-stack;
+}
+
+figcaption {
+  color: $dark-grey;
+  font: normal .8rem / 1.4 $text-font-stack;
 }
 
 code {

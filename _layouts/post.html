@@ -23,7 +23,7 @@
             <h2>{{latest_post.title}}</h2>
         </header>
         {%- for item in latest_post.post_content -%}
-        <section class="content {{item.type}}-block">
+        <section class="content {{item.type}}-block{% if item.full-width == true %} full-width{%- endif -%}">
             {% if item.type == 'content' -%}
             {{item.content | markdownify }}
             {%- endif -%}
@@ -41,8 +41,8 @@
                 <figcaption>{{item.caption}}</figcaption>
             </figure>
             {% endif %}
-            {%- endfor %}
         </section>
+        {%- endfor %}
         {% include post-footer.html %}
     </article>
     {% endfor %}
@@ -78,7 +78,7 @@
             <h2>{{page.title}}</h2>
         </header>
         {%- for item in page.post_content -%}
-        <section class="content {{item.type}}-block">
+        <section class="content {{item.type}}-block{% if item.full-width == true %} full-width{%- endif -%}">
             {% if item.type == 'content' -%}
             {{item.content | markdownify }}
             {%- endif -%}
