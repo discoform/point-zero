@@ -1,13 +1,13 @@
 ---
-# Layout field provides no options and is hidden in the post editor
+# Layout field provides no options and is hidden in the post editor.
 layout: post
 # Title field provides the post title and a sanitized slug/permalink based on the title content. !!! Use a descriptive title and then do not change it !!!
 title: Jordan Belson - Mandala (1953)
 # Published date is automatically generated upon creation of post.
 date: 2021-07-19T19:07:22.924Z
-# Image field is required for SEO
+# Image field is required for SEO.
 image: /assets/images/jordan-belson-mandala.jpg
-# Excerpt is required with a limit of 140 characters for SEO optimization
+# Excerpt is required for SEO. Limit of 140 characters.
 excerpt: Watch Jordan Belson's Mandala (1953), one of 13 films from the Center
   for Visual Music.
 # Optional featured media adds one or more full-width image or YouTube embeds to the top of the post.

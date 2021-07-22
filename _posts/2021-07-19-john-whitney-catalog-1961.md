@@ -1,13 +1,13 @@
 ---
-# Layout field provides no options and is hidden in the post editor
+# Layout field provides no options and is hidden in the post editor.
 layout: post
 # Title field provides the post title and a sanitized slug/permalink based on the title content. !!! Use a descriptive title and then do not change it !!!
 title: John Whitney Catalog, 1961
 # Published date is automatically generated upon creation of post.
 date: 2021-07-19T19:18:47.294Z
-# Image field is required for SEO
+# Image field is required for SEO.
 image: /assets/images/john-whitney-catalog.jpg
-# Excerpt is required with a limit of 140 characters for SEO optimization
+# Excerpt is required for SEO. Limit of 140 characters.
 excerpt: Watch John Whitney's demo reel, created with an analog computer built
   from WWII hardware.
 # Optional featured media adds one or more full-width image or YouTube embeds to the top of the post.
