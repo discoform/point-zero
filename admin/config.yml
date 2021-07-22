@@ -69,6 +69,7 @@ collections:
             fields:
               - { label: Image, name: path, widget: image }
               - { label: Alt text and Caption, name: caption, widget: string }
+              - {label: "Full Width?", name: "full-width", widget: "boolean", default: false, hint: "Display the image fill width." }
           - label: 'YouTube Embed'
             name: 'youtube'
             widget: 'object'
@@ -76,6 +77,7 @@ collections:
             fields:
               - { label: YouTube ID, name: youtubeID, widget: string }
               - { label: Alt text and Caption, name: caption, widget: string }
+              - {label: "Full Width?", name: "full-width", widget: "boolean", default: false, hint: "Display the video fill width."}
       - label: 'Add Recommended Post?'
         name: 'recommended_posts'
         widget: 'object'
