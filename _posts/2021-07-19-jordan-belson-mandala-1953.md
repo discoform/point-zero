@@ -24,7 +24,7 @@ post_content:
       Chakra and Meditation by Jordan Belson.
 
 
-      Title list, film notes and details are at [centerforvisualmusic.org/visualmusicdvd](centerforvisualmusic.org/visualmusicdvd)
+      Title list, film notes and details are at [Center for Visual Music](http://centerforvisualmusic.org/visualmusicdvd/)
 # Optional recommended posts are determined by the post author and added here. This is good for SEO and internal linking.
 recommended_posts:
   title:
