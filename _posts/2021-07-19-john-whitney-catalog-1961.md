@@ -17,7 +17,7 @@ media:
     caption: John Whitney Catalog, 1961
 # Optional post content features a mini pagebuilder to add blocks of written content, images, and YouTube embeds to the post. Recommended at least one instance of WYSIWYG block.
 post_content:
-  - type: post_content
+  - type: content
     content: >-
       John Whitney's demo reel of work created with his analog computer/film
       camera magic machine he built from a WWII anti-aircraft gun sight. 

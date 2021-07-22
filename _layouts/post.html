@@ -1,6 +1,6 @@
 {% include header.html %}
 <main class="container">
-   {%- if page.url == '/' %}
+    {%- if page.url == '/' %}
     {% for post in site.posts limit:1 %}
     {%- assign latest_post = site.posts[0] -%}
     <article>
@@ -19,29 +19,26 @@
         </figure>
         {% endfor %}
         {% endif %}
-        <section class="content">
-            <h2>{{latest_post.title}}</h2>
-            {%- for item in latest_post.post_content -%}
-            {% if item.type == 'post_content' -%}
+        <h2>{{latest_post.title}}</h2>
+        {%- for item in latest_post.post_content -%}
+        <section class="content {{item.type}}-block">
+            {% if item.type == 'content' -%}
             {{item.content | markdownify }}
             {%- endif -%}
-            <!--------------- -->
-            {% if item.type == 'youtube_embed' -%}
+            {% if item.type == 'youtube' -%}
             <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
             <figure>
                 <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
                 <figcaption>{{item.caption}}</figcaption>
             </figure>
             {% endif %}
-            <!-- ------------- -->
-            {% if item.type == 'post_content_image' -%}
+            {% if item.type == 'figure' -%}
             <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
             <figure>
                 {% picture {{item.path}} --alt {{item.caption}} %}
                 <figcaption>{{item.caption}}</figcaption>
             </figure>
             {% endif %}
-            <!-- ------------- -->
             {%- endfor %}
         </section>
         {% include post-footer.html %}
@@ -75,31 +72,28 @@
         </figure>
         {% endfor %}
         {% endif %}
-        <section class="content">
-            <h2>{{page.title}}</h2>
-            {%- for item in page.post_content -%}
-            {% if item.type == 'post_content' -%}
+        <h2>{{page.title}}</h2>
+        {%- for item in page.post_content -%}
+        <section class="content {{item.type}}-block">
+            {% if item.type == 'content' -%}
             {{item.content | markdownify }}
             {%- endif -%}
-            <!--------------- -->
-            {% if item.type == 'youtube_embed' -%}
+            {% if item.type == 'youtube' -%}
             <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
             <figure>
                 <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
                 <figcaption>{{item.caption}}</figcaption>
             </figure>
             {% endif %}
-            <!-- ------------- -->
-            {% if item.type == 'post_content_image' -%}
+            {% if item.type == 'figure' -%}
             <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
             <figure>
                 {% picture {{item.path}} --alt {{item.caption}} %}
                 <figcaption>{{item.caption}}</figcaption>
             </figure>
             {% endif %}
-            <!-- ------------- -->
-            {%- endfor %}
         </section>
+        {%- endfor %}
         {% include post-footer.html %}
     </article>
     {% endif %}

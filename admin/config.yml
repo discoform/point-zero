@@ -56,21 +56,21 @@ collections:
         add_to_top: false
         types:
           - label: 'WYSIWYG'
-            name: 'post_content'
+            name: 'content'
             widget: 'object'
             summary: '{{fields.label}}'
             required: false
             fields:
             - {label: 'Post Content', name: 'content', widget: 'markdown',  buttons: [ bold, italic, code, link, heading-three, quote, bulleted-list, numbered-list ] }
           - label: 'Image'
-            name: 'post_content_image'
+            name: 'figure'
             widget: 'object'
             required: false
             fields:
               - { label: Image, name: path, widget: image }
               - { label: Alt text and Caption, name: caption, widget: string }
           - label: 'YouTube Embed'
-            name: 'youtube_embed'
+            name: 'youtube'
             widget: 'object'
             required: false
             fields:
