@@ -32,7 +32,7 @@ collections:
         name: 'media'
         widget: 'list'
         comment: 'Optional featured media adds one or more full-width image or YouTube embeds to the top of the post.'
-        hint: 'Select one or more image or YouTube embed to display at the top of the post.'
+        hint: 'Select one or more images or YouTube embeds to display at the top of the post.'
         types:
         - label: 'Image'
           name: 'featured_media_image'
