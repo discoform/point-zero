@@ -15,6 +15,12 @@ collections:
         fields:
         - { label: About the site, name: about, widget: markdown }
         - { label: Display About Modal?, name: display, widget: boolean }
+      - label: 'Custom CSS'
+        name: 'customCSS'
+        file: _data/customCSS.yml
+        fields:
+        - {label: 'Code', name: 'customCSS', widget: 'code', default_language: 'CSS', output_code_only: true, required: false, hint: 'CSS Only, please.' }
+        - {label: 'Enable Custom CSS?', name: 'enable-customCSS', widget: 'boolean', required: false, hint: 'Set to true if you want to enable your custom CSS.'}
   - name: 'post'
     label: 'Post'
     folder: '_posts/'
@@ -69,7 +75,7 @@ collections:
             fields:
               - { label: Image, name: path, widget: image }
               - { label: Alt text and Caption, name: caption, widget: string }
-              - {label: "Full Width?", name: "full-width", widget: "boolean", default: false, hint: "Display the image fill width." }
+              - {label: 'Full Width?', name: 'full-width', widget: 'boolean', default: false, hint: 'Display the image fill width.' }
           - label: 'YouTube Embed'
             name: 'youtube'
             widget: 'object'
@@ -77,7 +83,7 @@ collections:
             fields:
               - { label: YouTube ID, name: youtubeID, widget: string }
               - { label: Alt text and Caption, name: caption, widget: string }
-              - {label: "Full Width?", name: "full-width", widget: "boolean", default: false, hint: "Display the video fill width."}
+              - {label: 'Full Width?', name: 'full-width', widget: 'boolean', default: false, hint: 'Display the video fill width.'}
       - label: 'Add Recommended Post?'
         name: 'recommended_posts'
         widget: 'object'
