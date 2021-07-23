@@ -1,4 +1,28 @@
 customCSS: |-
+  @media only screen and (min-width: 1200px) {
+  body.post {
+  display: grid;
+  gap: 28px;
+  padding-left: 28px;
+  padding-right: 28px;
+  max-width: 1127px;
+
+  }
+  header.site-header.container {
+      grid-column: 1 / 2;
+      max-width:  300px;
+  }
+
+  main.container {
+      grid-column: 2 / 2;
+        
+  }
+  main.container article {
+    
+      width:800px;
+  }
+  }
+
   h1.site-title{
   display: inline-block;
   background-color: rgb(48, 48, 48);
