@@ -14,8 +14,11 @@
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	{%- endif %}
 	{% if site.data.customCSS.enable-customCSS == true -%}
-	{% include customCSS.html %}
-	{%- endif %}
+
+<style>
+	{{site.data.customCSS.customCSS}}
+	</style>
+{%- endif %}
 </head>
 
 <body class="{{page.layout}}">
